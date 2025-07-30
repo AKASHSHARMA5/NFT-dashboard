@@ -134,12 +134,3 @@ Edit
 ---
 
 Do you want me to also **make a downloadable `.md` file** for you, or is this copy‑paste version enough?
-
-
-
-
-
-
-
-
-Ask ChatGPT
