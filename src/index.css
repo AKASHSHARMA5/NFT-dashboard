@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.scroll{
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+input::placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.head {
+  margin-top: 4px;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: rgb(226, 232, 240);
+}
+
+.connect {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+@keyframes bounce{
+ 0%,100%{
+transform: translate3d(30px,-42px,54px);
+}
+50%{
+transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideIN{
+  0%{
+ transform: translateY(25px);
+ }
+ 100%{
+ transform: translateY(0);
+ }
+ }
+
+ @keyframes slideOut{
+  0%{
+ transform: translateY(0px);
+ }
+ 100%{
+ transform: translateY(-25px);
+ }
+ }
+
+ @keyframes cardSlideIn{
+  0%{
+ transform: translateX(250%);
+ }
+ 100%{
+ transform: translateX(0px);
+ }
+ }
+
+ @keyframes cardSlideOut{
+  0%{
+ transform: translateX(0px);
+ }
+ 100%{
+ transform: translateX(-250%);
+ }
+ }
+@keyframes animate{
+  0%{
+    transfrom: 
+  }
+}
+
+.cardSlideIn{
+  animation: cardSlideIn .5s ease-in-out;
+}
+
+.cardSlideOut{
+  animation: cardSlideOut .5s ease forwards;
+}
+.slideOut{
+  animation: slideOut .5s ease-in-out; 
+ }
+.slideIn{
+  animation: slideIN .5s ease-in-out;
+}
+
+.blg{
+  background: rgb(20,17,51);
+  background: linear-gradient(166deg, rgba(20,17,51,1) 11%, rgba(37,26,37,1) 68%, rgba(126,4,130,1) 96%);
+
+}
+
+.cards {
+  transition: all transform 0.3 ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.2);
+}
+
+.highlight{
+  opacity: 0.5;
+}
+
+.gradient{
+  background: radial-gradient(circle, #ff6f61, #d84315);
+  position: relative;
+  animation: rotate 5s infinite linear;
+  box-shadow: inset -20px -20px 50px rgba(0, 0, 0, 0.5),
+  inset 20px 20px 50px rgba(255, 255, 255, 0.3),
+  0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+ @keyframes slide {
+  0%,100% {
+    transform:translateX(0);  }
+  50% {
+    transform:translateX(1350%);
+  }
+} 
+
+@keyframes slide1 {
+  0%,100% {
+    transform:translateX(0);  }
+  50% {
+    transform:translateX(-1350%);
+  }
+} 
+.button{
+  color:#9ca3af
+}
+
+.button:hover{
+  color:white
+}
+
+.arrow::after{
+  content: '▼';
+  color: #9ca3af;
+  position: absolute;
+  margin-top: 27px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+}
